@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #2874f0;
+    height: 56px;
+    box-shadow: 0px 1px 0px -1px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+.header-container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0px 9px 0px;
+    height: 100%;
+    font-size: 14px;
+}
+.header-left {
+    display: flex;
+    width: 60%;
+    height: 100%;
+}
+.header-img {
+    width: 14%;
+    margin-right: 12px;
+}
+.header-img img{
+    width: 100%;
+}
+.search {
+    width: 80%;
+    position: relative;
+    display: flex;
+    box-shadow: 0px 1px 0px -1px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+.icon-search {
+    font-size: 20px;
+    position: absolute;
+    left: 9px;
+    top: 7px;
+    color: rgba(0, 0, 0, 0.548);
+}
+.forsearch {
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    border: 0;
+    outline: 0;
+    padding: 2px 35px;
+}
+.forsearch::placeholder{
+    color: rgba(0, 0, 0, 0.548);
+}
+.header-right{
+    width: 26%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+    height: 100%;
+    overflow: hidden;
+}
+.header-right a{
+    text-decoration: none;
+    color: white;
+}
+.btn-login {
+    background-color: white;
+    padding: 6px 40px;
+    border: 0;
+    color: #2874f0;
+    font-weight: 500;
+    cursor: pointer;
+    line-height: initial;
+}
+.cart {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    cursor: pointer;
+}
+.opt-more {
+    color: white;
+    background-color: inherit;
+    border: 0;
+    cursor: pointer;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.opt-more:hover .show{
+    display: none;
+}
+.opt-more:hover .hide{
+    display: block;
+    padding-top: 3px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+.mat-menu-panel-0 {
+    background: #424242;
+}
+.categories {
+    background-color: white;
+    height: 42px;
+    box-shadow: 0px 1px 0px -1px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+    font-size: 14px;
+}
+.categories-list {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    width: 81%;
+    align-items: center;
+    margin: 0 auto;
+}
+.list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.list:hover {
+    color: #2874f0;
+}
+.list-icon {
+    color: #cbcbcb;
+}
+.hide {
+    display: none;
+}
+.list:hover .list-icon{
+    color: #2874f0;
+}
+.list:hover .show{
+    display: none;
+}
+.list:hover .hide{
+    display: block;
+    padding-top: 3px;
+}
+.footer {
+    transform: translateY(56px);
+    background-color: #172337;
+    color: white;
+}
+.footer-container {
+    padding: 40px 0 10px 0;
+    width: 90%;
+    margin: 0 0 0 65px;
+    font-size: 12px;
+}
+.footer-content1 {
+    display: flex;
+    flex-flow: row;
+}
+.footer-ul {
+    width: 17%;
+    line-height: 24px;
+}
+.footer-li {
+    list-style-type: none;
+    text-transform: capitalize;
+    line-height: 2;
+    cursor: pointer;
+}
+.footer-li:hover {
+    text-decoration: underline;   
+}
+.li-first {
+    color: #878787;
+    line-height: 16px;
+    margin: 0 0 9px;
+    text-transform: uppercase;
+    cursor: text;
+}
+.li-first:hover {
+    text-decoration: none;
+}
+.info {
+    text-transform: capitalize;
+    cursor: text;
+}
+.info:hover {
+    text-decoration: none;
+}
+.info-ul {
+    padding: 0 18px 0 22px;
+}
+.border-ul {
+    border-left: 1px solid #454d5e;
+    height: fit-content;
+}
+.footer-content2 {
+    border-top: 1px solid #454d5e;
+    padding: 25px 0;
+    margin: 40px 0 0 0;
+    font-size: 14px;
+}
+.footer-content2 ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-content2 ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+.orange {
+    color: orange;
+    margin-right: 5px;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+}
+.pointer {
+    cursor: pointer;
+}

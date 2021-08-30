@@ -1,0 +1,159 @@
+<mat-drawer-container class="example-container con">
+    <mat-drawer mode="side" opened class="left-slide">
+      <h3 class="filters">Filters</h3>
+      <div class="categories">
+        <p class="cat-head">CATEGORIES</p>
+        <p class="cat-con">< Mobiles & Accessories</p>
+        <p class="cat-con2">Mobiles</p>
+      </div>
+      <div class="price">
+        <p class="price">PRICE</p>
+        <div class="selection">
+          <select matNativeControl required class="options">
+            <option value="Min">Min</option>
+            <option value="₹2000">₹2000</option>
+            <option value="₹4000">₹4000</option>
+            <option value="₹7000">₹7000</option>
+            <option value="₹10000">₹10000</option>
+            <option value="₹13000">₹13000</option>
+            <option value="₹16000">₹16000</option>
+            <option value="₹20000">₹20000</option>
+            <option value="₹25000">₹25000</option>
+            <option value="₹30000">₹30000</option>
+            <option value="₹50000">₹50000</option>
+          </select>
+          <p>to</p>
+          <select matNativeControl required class="options">
+            <option value="₹2000">₹2000</option>
+            <option value="₹4000">₹4000</option>
+            <option value="₹7000">₹7000</option>
+            <option value="₹10000">₹10000</option>
+            <option value="₹13000">₹13000</option>
+            <option value="₹16000">₹16000</option>
+            <option value="₹20000">₹20000</option>
+            <option value="₹25000">₹25000</option>
+            <option value="₹30000">₹30000</option>
+            <option value="₹50000">₹50000</option>
+            <option value="₹50000+">₹50000+</option>
+          </select>
+          </div>
+      </div>
+      <div class="check">
+        <input class="form-check-input" type="checkbox" value="" id="flex1">
+        <label class="form-check-label" for="flex1"><img src="../../assets/images/assured.png"></label>
+      </div>
+      <!-- <section class="list" (click)="dropdown()">
+        <div>ram</div>
+        <div class="hh">jfdjnfn</div>
+      </section> -->
+      <mat-nav-list class="topic">
+        <div  class="lists" (click)="dropdown()"><p> ram</p><mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" style="margin: 0;"class="icon list-icon show">{{icon}}</mat-icon></div>
+        <div *ngIf="!isDisplay"class="show">
+          <div class="opt">
+            <input class="form-check-input" type="checkbox" value="" id="flex2">
+            <label class="form-check-label" for="flex2t">6 GB & Above</label>
+          </div>
+          <div class="opt">
+            <input class="form-check-input" type="checkbox" value="" id="flex3">
+            <label class="form-check-label" for="flex3">4 GB</label>
+          </div>
+          <div class="opt">
+            <input class="form-check-input" type="checkbox" value="" id="flex4">
+            <label class="form-check-label" for="flex4">3 GB</label>
+          </div>
+        </div>
+      </mat-nav-list>
+     <mat-nav-list class="topic">
+      <div class="lists"(click)="dropdown()"><p> brand</p><mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" style="margin: 0;"class="icon list-icon show">{{icon}}</mat-icon></div>
+      <div *ngIf="!isDisplay"class="show">
+        <div class="opt">
+          <input class="form-check-input" type="checkbox" value="" id="flex5">
+          <label class="form-check-label" for="flex5">realme</label>
+        </div>
+        <div class="opt">
+          <input class="form-check-input" type="checkbox" value="" id="flex6">
+          <label class="form-check-label" for="flex6">POCO</label>
+        </div>
+        <div class="opt">
+          <input class="form-check-input" type="checkbox" value="" id="flex7">
+          <label class="form-check-label" for="flex7">NOKIA</label>
+        </div>
+      </div>
+     </mat-nav-list>
+   
+    </mat-drawer>
+    <mat-drawer-content class="right-content" style="margin-left: 280px;">
+      <div class="results">
+      <p><a class="hov"routerLink="/home">Home </a> <span>></span>
+        <a class="hov"> Mobiles & Ac.. </a> <span>></span>
+        <a class="hov"> Mobiles</a></p>
+        <h4>Showing 26 of 26 results for "mobiles"</h4>
+        <ul class="sorting">
+          <li class="first">sort by</li>
+          <li><a>popularity</a></li>
+          <li><a>price-low to high</a></li>
+          <li><a>price-high to low</a></li>
+          <li><a>newest first</a></li>
+        </ul>
+        </div>
+        <!-- <div  *ngFor="let item of countryList">
+          <p>{{item.name}} | {{item.code}}</p>
+        </div> -->
+        <div *ngFor="let item of countryList">
+        <section class="product">
+          <div class="product-image">
+            <img src={{item.src}}>
+          </div>
+          <div class="product-about">
+            <div class="product-details">
+              <h3 class="product-title">{{item.name}}</h3>
+              <p><span class="rat">{{item.rating}}</span>{{item.total_rating}}</p>
+              <ul class="features">
+                <li>{{item.ram}}</li>
+                <li>{{item.display}}</li>
+                <li>{{item.camera}}</li>
+                <li>{{item.battery}}</li>
+                <li>{{item.processor}}</li>
+                <li>{{item.warenty}}</li>
+              </ul>
+            </div>
+            <div class="product-offers">
+              <div class="rupees">
+                <label>{{item.rupee}}</label>
+                <img src={{item.assured_img}}>
+              </div>
+              <p class="off">{{item.off}}</p>
+              <p class="exchange">{{item.exchange}}</p>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="product">
+          <div class="product-image">
+            <img src="../../assets/images/poco.jpg">
+          </div>
+          <div class="product-about">
+            <div class="product-details">
+              <h3 class="product-title">Poco</h3>
+              <p><span class="rat">4.6 ★</span>30,000 Ratings & 5,000 Reviews</p>
+              <ul class="features">
+                <li>2 GB RAM | 32 GB ROM | Expandable Upto 256 GB</li>
+                <li>16.51 cm (6.5 inch) HD Display</li>
+                <li>13MP + 2MP + 2MP | 13MP Front Camera</li>
+                <li>3000 mAh Battery</li>
+                <li>Snapdragon 732g Processor</li>
+                <li>1 Year Warranty for Mobile and 6 Months for Accessories</li>
+              </ul>
+            </div>
+            <div class="product-offers">
+              <div class="rupees">
+                <label>₹15,000</label>
+                <img src="../../assets/images/assured.png">
+              </div>
+              <p class="off">20% off</p>
+              <p class="exchange">Upto ₹7,450 Off on Exchange</p>
+            </div>
+          </div>
+        </section> -->
+        </div>
+    </mat-drawer-content>
+  </mat-drawer-container>

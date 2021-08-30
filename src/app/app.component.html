@@ -1,0 +1,118 @@
+<mat-toolbar class="header">
+  <section class="header-container">
+    <div class="header-left">
+      <div class="header-img">
+        <img src="../assets/images/headerlogo.png" alt="logo">
+      </div>
+      <div class="search">
+        <input matInput placeholder="search for products,brands and more" type="search"class="forsearch">
+        <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon-search">search</mat-icon>
+      </div>
+    </div>
+    <div class="header-right">
+      <button mat-flat-button color="accent"  class="btn-login">Login</button>
+
+      <p [matMenuTriggerFor]="belowMenu" class="opt-more">More<mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon show">expand_more</mat-icon> <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon hide">expand_less</mat-icon></p>
+      <mat-menu #belowMenu="matMenu" yPosition="below" class="opt-more-below">
+        <button mat-menu-item class="k">Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+      <p class="cart"><mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon">shopping_cart</mat-icon>Cart</p>
+    </div>
+  </section>
+</mat-toolbar>
+<mat-toolbar class="categories">
+  <ul class="categories-list">
+    <li class="list">Electronics <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon list-icon show">expand_more</mat-icon> <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon list-icon hide">expand_less</mat-icon></li>
+    <li class="list">TVs & Appliances <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon list-icon show">expand_more</mat-icon> <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon list-icon hide">expand_less</mat-icon></li>
+    <li class="list">Men <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon list-icon show">expand_more</mat-icon> <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon list-icon hide">expand_less</mat-icon></li>
+    <li class="list">Women <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon list-icon show">expand_more</mat-icon> <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon list-icon hide">expand_less</mat-icon></li>
+    <li class="list">Baby & Kids <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon list-icon show">expand_more</mat-icon> <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon list-icon hide">expand_less</mat-icon></li>
+    <li class="list">Home & Furniture <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon list-icon show">expand_more</mat-icon> <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon list-icon hide">expand_less</mat-icon></li>
+    <li class="list">Sports, Books & More <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon list-icon show">expand_more</mat-icon> <mat-icon aria-hidden="false" aria-label="Example thumbs-up icon" class="icon list-icon hide">expand_less</mat-icon></li>
+    <li class="list">Flights</li>
+    <li class="list">Offer Zone</li>
+  </ul>
+</mat-toolbar>
+<router-outlet></router-outlet>
+<section class="footer">
+  <div class="footer-container">
+    <div class="footer-content1">
+      <ul class="footer-ul">
+        <li class="footer-li li-first">ABOUT</li>
+        <li class="footer-li">Contact Us</li>
+        <li class="footer-li">About Us</li>
+        <li class="footer-li">Careers</li>
+        <li class="footer-li">Flipkart Stories</li>
+        <li class="footer-li">Press</li>
+        <li class="footer-li">Flipkart wholesale</li>
+        <li class="footer-li">corporate information</li>
+      </ul>
+      <ul class="footer-ul">
+        <li class="footer-li li-first">HELP</li>
+        <li class="footer-li">payments</li>
+        <li class="footer-li">shipping</li>
+        <li class="footer-li">cancellation & retuns</li>
+        <li class="footer-li">FAQ</li>
+        <li class="footer-li">report infringement</li>
+      </ul>
+      <ul class="footer-ul">
+        <li class="footer-li li-first">policy</li>
+        <li class="footer-li">return policy</li>
+        <li class="footer-li">term of use</li>
+        <li class="footer-li">security</li>
+        <li class="footer-li">privacy</li>
+        <li class="footer-li">sitemap</li>
+        <li class="footer-li">EPR compilance</li>
+      </ul>
+      <ul class="footer-ul">
+        <li class="footer-li li-first">social</li>
+        <li class="footer-li">facebook</li>
+        <li class="footer-li">twitter</li>
+        <li class="footer-li">youTube</li>
+      </ul>
+      <ul class="footer-ul info-ul border-ul">
+        <li class="footer-li li-first info">Mail Us:</li>
+        <li class="footer-li info">Flipkart Internet Private Limited,
+
+          Buildings Alyssa, Begonia &
+          
+          Clove Embassy Tech Village,
+          
+          Outer Ring Road, Devarabeesanahalli Village,
+          
+          Bengaluru, 560103,
+          
+          Karnataka, India</li>
+      </ul>
+      <ul class="footer-ul info-ul ">
+        <li class="footer-li li-first info">Registered Office Address:</li>
+        <li class="footer-li info">Flipkart Internet Private Limited,
+
+          Buildings Alyssa, Begonia &
+          
+          Clove Embassy Tech Village,
+          
+          Outer Ring Road, Devarabeesanahalli Village,
+          
+          Bengaluru, 560103,
+          
+          Karnataka, India
+          
+          CIN : U51109KA2012PTC066107
+          
+          Telephone: 1800 202 9898</li>
+      </ul>
+    </div>
+    <div class="footer-content2">
+      <ul>
+        <li class="pointer"><mat-icon aria-hidden="false" aria-label="Example home icon" class="orange">work</mat-icon>sell on flipcart</li>
+        <li class="pointer"><mat-icon aria-hidden="false" aria-label="Example home icon" class="orange">stars</mat-icon>advertisegift cards</li>
+        <li class="pointer"><mat-icon aria-hidden="false" aria-label="Example home icon" class="orange">redeem</mat-icon>help center</li>
+        <li class="pointer"><mat-icon aria-hidden="false" aria-label="Example home icon" class="orange">help</mat-icon>dbhcbd</li>
+        <li>© 2007-2021 Flipkart.com</li>
+        <li><img src="../assets/images/footer-img.svg"></li>
+      </ul>
+    </div>
+  </div>
+</section>

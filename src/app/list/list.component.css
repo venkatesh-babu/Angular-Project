@@ -1,0 +1,213 @@
+.con {
+  margin: 10px;
+  background-color: #f0f0f0;
+  color: black;
+}
+.left-slide {
+    box-shadow: 0px 1px 0px -1px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+    width: 18%;
+    background-color: white;
+    color: black;
+    height: fit-content;
+}
+.right-content {
+    background-color: white;
+    margin-left: 280px;
+}
+.filters {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+.categories {
+  display: flex;
+  flex-flow: column;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.cat-head {
+  font-size: 12px;
+}
+.cat-con {
+  cursor: pointer;
+  color: #878787;
+}
+.cat-con2 {
+  margin: 0;
+  padding: 0px 0 5px 14px;
+  font-weight: 500;
+  color: #212121;
+}
+.price {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.selection {
+  display: flex;
+  justify-content: space-between;
+}
+.options {
+  outline: none;
+  padding: 1.5px 2px;
+  font-size: 14px;
+  width: 99px;
+  border-color: #e0e0e0;
+  height: fit-content;
+}
+.check {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.check label {
+  margin-left: 10px;
+}
+.check label img {
+  width: 77px;
+  height: 21px;
+  cursor:pointer;
+}
+.hh {
+  display: none;
+}
+.lists {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.topic {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px;
+  cursor: pointer;
+}
+.mat-checkbox-inner-container {
+  border: 1px solid red;
+}
+.show {
+  margin-top: 10px;
+}
+.opt {
+  padding: 6px 0px;
+}
+.opt input {
+  margin-right: 10px;
+}
+.lists p {
+  margin: 0;
+}
+.results {
+  padding: 12px 16px 3px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.results p {
+  font-size: 12px;
+  color: #878787;
+  padding: 4px 0;
+  cursor: pointer;
+}
+.hov:hover{
+  color: #2874f0;
+}
+.hov {
+  text-decoration: none;
+  color: #878787;
+}
+.sorting {
+  display: flex;
+  padding: 0;
+  text-transform: capitalize;
+}
+.sorting li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+.first {
+  font-weight: 500;
+}
+.sorting li a {
+  cursor: pointer;
+}
+.product {
+  display: flex;
+  padding: 24px 24px 30px 24px;
+  flex-flow: row;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+.product-about {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 18px;
+}
+.product-image img {
+  width: 93px;
+  height: 200px;
+  margin: 0 54px;
+}
+.product-details {
+  width: 59.5%;
+}
+.product-offers {
+  padding: 0 0 0 25px;
+  width: 38%;
+}
+.product-title {
+  font-size: 18px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 500;
+}
+.rat {
+  border: 1px solid transparent;
+  background-color: #388e3c;
+  color: white;
+  font-size: 12px;
+  padding: 2px 4px 2px 6px;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+.features {
+  padding-left: 14px;
+}
+.features li {
+  list-style-type: none;
+}
+.features li::before{
+  content: "\2022";
+  color: #c2c2c2;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.rupees{
+  font-size: 25px;
+}
+.rupees label {
+  padding-right: 33px;
+}
+.rupees img {
+  width: 77px;
+  height: 21px;
+}
+.off {
+  font-size: 13px;
+  color: #388e3c;
+  padding: 5px 0 0 0;
+  font-weight: 500;
+  margin: 0;
+}
+.exchange {
+  font-size: 14px;
+  padding: 5px 0 0 0;
+}
+.product:hover .product-title{
+  color: #2874f0;
+}
